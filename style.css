@@ -1,0 +1,36 @@
+#catalog img {
+    height: 100px;
+}
+
+#intro {
+    grid-area: intro;
+    text-align: center;
+}
+
+#displayNew img{
+    height: 100px;
+}
+
+#container{
+ display: grid;
+ grid-template-columns: 50% 50%;
+ grid-template-areas: 
+ "intro intro"
+ "main lookup"
+ ;
+
+
+}
+
+#maindisplay{
+ grid-area: main;
+ border-width: 5px;
+ border-style: solid;
+ border-color: red;
+}
+#lookup-items{
+ grid-area: lookup;
+ border-width: 5px;
+ border-style: solid;
+ border-color: red;
+}

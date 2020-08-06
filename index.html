@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/main.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Marvel</title>
 </head>
+
 <body>
-   <h1></h1> 
-   <ul id="catalog"></ul>
+    <div id="container">
+        <div id="intro">
+            <h1>Marvel Card Collection</h1>
+        </div>
+        <div id="maindisplay">
+            <h3>Here is your Existing Card Collection</h3>
+            <ul id="catalog"></ul>
+        </div>
+        <div id="lookup-items">
+            <h3>Enter Information and search for New Cards You want to collect</h3>
+            <form id="form" action="">
+                <label for="search">Type First Letters for search</label>
+                <input type="text" id="search" name="search" value="spider"><br>
+                <label for="numberS">How Many Cards To look through</label>
+                <select id="numberS" name="numberS">
+                    <option value="1">1</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                </select><br>
+            </form>
+            <button id="submitSearch" onclick="submitOptions()">Submit Search</button>
+            <div id="displayNew"></div>
+        </div>
+    </div>
+
+    <script src="/main.js"></script>
 </body>
+
 </html>
