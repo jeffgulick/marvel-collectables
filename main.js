@@ -75,7 +75,11 @@ const getCards = (searchText, numberSearch) => {
         const button = document.createElement("button")
         li.appendChild(button)
         button.innerHTML = "Click to Add"
-        button.addEventListener('click', function () { addCard(card) })
+        button.addEventListener('click', function () { 
+          addCard(card);
+          li.remove(); 
+          picture.remove();
+        })
 
 
         let picture = document.createElement('div');
